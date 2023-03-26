@@ -11,10 +11,10 @@ fetch("https://restcountries.com/v3.1/all")
     },[])
     return (
       <div className="flags">
-        {Posts.map((post) => console.log(post))}
+        {/* {Posts.map((post) => console.log(post))} */}
 
         {Posts.map((post) => (
-          <EachDetails Post={post}></EachDetails>
+          <EachDetails Post={post} key={post.cca3}></EachDetails>
         ))}
       </div>
     );
